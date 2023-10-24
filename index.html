@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/dist/tailwind.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid grid-cols-12 gap-4 my-4">
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="changeContent">JavaScript can change HTML content</p>
+                        <button type="button" onclick="changeContent()">Click me!</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Change text on button click</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <button type="button" onclick="image1()">Image 1</button>
+                        <img id="myImage" src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" class="w-[100px]">
+                        <button type="button" onclick="image2()">Image 2</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Change the value of an image source</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="changeFont">Change the styling of the text</p>
+                        <button type="button" onclick="changeFont()">Click</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Change styling with button click</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="hideElement">Hide HTML elements</p>
+                        <button type="button" onclick="hideElement()">Click</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Hide HTML elements</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="showElement" class="hidden">Show Hidden HTML elements</p>
+                        <button type="button" onclick="showElement()">Click</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Show hidden HTML elements</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="documentWrite"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>This text is written in JS using innerHTML</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_dom" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <button type='button' id="alert" onclick="alertBox()">Click here</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Click the button to show an alert</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_alert" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="variables"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Javascript Variables</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_statements" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="undefined"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>An undefined varibale will return 'undefined'</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_undefined" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="basicArray"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Javascript Array</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_array" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="object"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Javascript Object</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_object" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="objectMethod"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Javascript Object Method</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_method" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="onClickTime"></p>
+                        <button type="button" onclick="onClickTime()">Click Here</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>On click event that displays the current time and date.</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick1" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <button type="button" id="thisOnClickTime" onclick="thisOnClickTime('thisOnClickTime')">Click Here</button>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>On click event that displays the current time and date on the same element that is clicked.</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="stringLength"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Calculating string length using text.length</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_length" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p id="indexText"><p>
+                        <p id="indexOf"></p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Locating the index of the word "test" in the sentence</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_indexof" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <p>The rain in SPAIN stays mainly in the plain</p>
+                        <button type="button" id="strMatchBtn">String Match Button</button>
+                        <p id="strMatch"><p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Perform a search for how many times characters appear</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_match" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <button type="button" id="replaceText">Click here to replace text</button>
+                        <p id="str">I like to eat cheese<p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Replace text in a string</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replace" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <button type="button" id="uppercase">Click here to change text to uppercase</button>
+                        <p id="uppercaseText">boo<p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Convert Text to uppercase</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_toupper" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4">
+                <div class="mb-2">
+                    <div class="h-[400px] border border-gray-500 mb-2 p-2">
+                        <button type="button" id="lowercase">Click here to change text to lowercase</button>
+                        <p id="lowercaseText">BOO<p>
+                    </div>
+                    <div class="border border-gray-500 p-2">
+                        <p>Convert Text to lowercase</p>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_tolower" class="inline-block">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="src/scripts/scripts.js"></script>
+</footer>
+</html>
